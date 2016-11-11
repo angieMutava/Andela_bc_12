@@ -14,3 +14,5 @@ class prime_checker(unittest.TestCase):
 
     def test_number_one(self):
     	self.assertEqual(testcases.prime_generator(1), [])
+    def test_number_zero(self):
+    	self.assertEqual(testcases.prime_generator(0), [])
