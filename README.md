@@ -24,9 +24,9 @@ For example the test below checks whether the number passed is negative and give
         self.assertEqual(testcases.prime_generator(-5), "Negative numbers not allowed.")
 ``` 
 
-#Asymptotic Analysis
+##Asymptotic Analysis
 This is a simple description of the prime_generator method in regard to Big O-notation in terms of the time taken to execute it.From my analysis the method is executing at a constant average time of a few seconds.Proper analysis is to be conducted for worst cases.
 
-#Tasks not accomplished.
+##Tasks not accomplished.
 
 Improving the efficiency of the program in cases where the number passed is huge.For example 1,000,000.Still analysing the program to check for better ways to achieve the same with minimum resource usage in the worst case.
