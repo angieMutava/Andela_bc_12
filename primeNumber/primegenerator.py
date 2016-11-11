@@ -1,17 +1,21 @@
+def is_prime(number):
+    if number <= 0:
+        return False
+    elif number == 2:
+        return True
+    else:
+        for i in range(2, number):
+            if number % i == 0:
+                return False
+        return True
+
 def prime_generator(number):
-	result = []
-	if number < 0:
-		return "Negative numbers not allowed."
-	else:
-		for i in range(0, number):
-			if i < 2:
-				return result
-			elif i == 2:
-				return result.append(i)
-			elif i > 2:
-				if number % i == 0:
-					return result
-				return result.append(i)	
-
-
-print prime_generator(10)
+    if number < 0:
+        return "Negative numbers not allowed."
+    if type(number) != int:
+        return "Only integers allowed"
+    result = []
+    for i in range(2, number + 1):
+        if is_prime(i):
+            result.append(i)
+    return result
