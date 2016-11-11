@@ -1,5 +1,5 @@
 import unittest
-from primeNumber import prime_generator
+import primegenerator
 
 class prime_checker(unittest.TestCase):
 
@@ -8,3 +8,7 @@ class prime_checker(unittest.TestCase):
 
 	def test_prime_generator(self):
 		self.assertEqual(prime_generator(10), [2, 3, 5, 7])
+
+	def test_data_type(self):
+		self.assertEqual(prime_generator("str"), "Number should be integer")
+
