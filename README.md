@@ -1,5 +1,5 @@
 # Andela_bc_12
-<hr>
+
 ##Prime numbers generator
 
 This is a simple command line program that generates list of prime numbers from zero to the number passed in the function.
