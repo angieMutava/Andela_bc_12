@@ -24,14 +24,13 @@ class prime_checker(unittest.TestCase):
     def test_prime_50(self):
         self.assertEqual(testcases.prime_generator(50), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47])
 
-    def test_even(self):
+    def test_prime_4(self):
         self.assertEqual(testcases.prime_generator(4), "Number is not prime")
 
     def test_empty_parameter(self):
-        self.assertEqual(testcases.prime_generator(), " No  parameter provided")
+        self.assertRaises(testcases.prime_generator(), " No  parameter provided")
 
-    def test_error(self):
-        raise RuntimeError('Test Error')
+   
                
 
 if __name__ == '__main__':
